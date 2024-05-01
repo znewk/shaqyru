@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Amour';
+    src: url('../public/fonts/KZ_Mon_Amour_One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Carolina';
+    src: url('../public/fonts/KZCarolina-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Margarita';
+    src: url('../public/fonts/KZ_Margarita_script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bikam';
+    src: url('../public/fonts/Bickham_Script_Pro_3_Regular.otf') format('truetype');
+
+}
+
+
+.body{
+    
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../public/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    /* padding-bottom: 30px; */
+    box-sizing: border-box;
+}
+
+.blur{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(122, 105, 38, 0.2);
+    /* padding-bottom: 30px;
+    box-sizing: border-box; */
+}
+
+.mainBlock{
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whiteBlock{
+    background-color: rgba(252, 248, 232, 0.7); 
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+.dnd{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120px;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    justify-content: center;
+}
+.dndG{
+    font-size: 32px;
+    color: grey;
+}
+
+.names{
+    margin: 0;
+    font-family: "Bikam";
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 50px;
+}
+.namesSecond{
+    text-transform: none;
+    margin: 0;
+    font-family: "Bikam";
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 50px;
+    color: yellowgreen;
+}
+
+.date{
+    display: block;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.secondBlock{
+    background-color: rgba(252, 248, 232, 0.7); 
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.subSecond{
+    font-size: 26px;
+    text-transform: uppercase;
+}
