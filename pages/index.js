@@ -125,6 +125,9 @@ const Index = () => {
                         </div>
 
                         <div className={styles.subSecond}>
+                        <span style={{whiteSpace: 'nowrap', display: 'flex', justifyContent: 'center'}}>
+                        АСТАНА ҚАЛАСЫ 
+                            </span>
                             <div style={{padding: '15px 0'}}>
                                 <span style={{display: 'flex', justifyContent: 'center'}} className={styles.namesSecond}>Dilu Plaza</span>
                             </div>
