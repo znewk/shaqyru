@@ -38,8 +38,8 @@ const Index = () => {
 
                             <div style={{padding: '15px 0'}}>
                                 <span className={styles.namesSecond}>Диас</span>
-                                <div style={{padding: '0 15px', boxSizing: 'border-box', display: 'flex', justifyContent: 'center'}}>
-                                    МЕН
+                                <div style={{padding: '0 15px', boxSizing: 'border-box', display: 'flex', justifyContent: 'center', marginTop: '-20px'}}>
+                                    &
                                 </div>
                                 <span style={{display: 'flex', justifyContent: 'flex-end'}} className={styles.namesSecond}>Диляра</span>
                             </div>
