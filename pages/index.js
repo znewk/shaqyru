@@ -21,7 +21,7 @@ const Index = () => {
                         <Image src={'/List.png'} width={200} height={200} style={{transform: 'rotate(75deg)', marginTop: '-50px'}}/>
                     </div>
 
-                    <div className={styles.secondBlock}>
+                    <div className={styles.secondBlock} style={{paddingBottom: 30}}>
                         <div className={styles.header}>
                             <span>———</span>
                             <div style={{padding: '0 15px', boxSizing: 'border-box'}}>
@@ -51,6 +51,57 @@ const Index = () => {
                     </div>
                     <div style={{display: 'flex', justifyContent: 'center', paddingBottom: 50}}>
                         <Image src={'/List.png'} width={200} height={200} style={{transform: 'rotate(75deg)', marginTop: '-50px'}}/>
+                    </div>
+
+                    <div className={styles.secondBlock}>
+                        <div className={styles.header}>
+                            <span style={{display: 'block', textAlign: 'center'}}>———————————</span>
+
+                            <div style={{display: 'flex', justifyContent: 'space-between', fontSize:24}}>
+                                <span>29 МАУЫСЫМ</span>
+                                <span>2024</span>
+                            </div>
+                            <span style={{display: 'block', textAlign: 'center'}}>———————————</span>
+                        </div>
+
+                        <div className={styles.subSecond}>
+                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                                <Image src={'/calendar.png'} width={300} height={300} style={{marginTop: '-50px'}}/>
+                            </div>
+                        </div>
+
+                        <div className={styles.header} style={{marginTop: '-30px'}}>
+                            <span style={{display: 'block', textAlign: 'center'}}>БАСТАЛУЫ</span>
+                            <span style={{display: 'block', textAlign: 'center'}}>17:00</span>
+                        </div>
+                    </div>
+                    <div style={{display: 'flex', justifyContent: 'center', paddingBottom: 50}}>
+                        <Image src={'/List.png'} width={200} height={200} style={{transform: 'rotate(75deg)', marginTop: '-50px'}}/>
+                    </div>
+
+                    <div className={styles.secondBlock} style={{paddingBottom: 30}}>
+                        <div className={styles.header} style={{paddingBottom: 0}}>
+                            <span>———</span>
+                            <div style={{padding: '0 15px', boxSizing: 'border-box'}}>
+                                <span>Мекен-жайымыз:</span> <br/>
+                            </div>
+                            <span style={{display: 'flex', justifyContent: 'flex-end'}}>———</span>
+                        </div>
+
+                        <div className={styles.subSecond}>
+                            <div style={{padding: '15px 0'}}>
+                                <span style={{display: 'flex', justifyContent: 'center'}} className={styles.namesSecond}>Dilu Plaza</span>
+                            </div>
+                            <span style={{whiteSpace: 'nowrap', display: 'flex', justifyContent: 'center'}}>
+                                банкет залы 
+                            </span> <br></br>
+
+                            <span style={{textAlign: 'center', display: 'block', }}>
+                            сіздерге ыңғайлы болуы үшін төменде көрсетілген 2gis картаны пайдалануыңызды сұраймыз
+                            </span>
+                        </div>
+                    
+                        <a href="https://2gis.kz/astana/geo/70000001055312155" className={styles.link}>2GIS</a>
                     </div>
                 </div>
             </div>
