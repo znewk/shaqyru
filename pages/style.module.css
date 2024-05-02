@@ -133,3 +133,49 @@
     text-decoration: none;
     margin-top: 30px;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.time{
+    color: #0e5e0b;
+    font-size: 80px;
+    font-family: "Bikam";
+    line-height: 30px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+}
+.namesss{
+    color: #0e5e0b;
+    font-size: 48px;
+    font-family: "Bikam";
+    line-height: 30px;
+    text-transform: none;
+}
+.wrapper2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.wrapperItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
