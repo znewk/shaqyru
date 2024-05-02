@@ -1,21 +1,55 @@
 import Head from "next/head";
 import styles from './style.module.css'
 import Image from "next/image";
+import { useState, useRef } from 'react';
 
 const Index = () => {
+
+    const [isPlaying, setIsPlaying] = useState(true); // Состояние, отслеживающее, воспроизводится ли музыка
+    const audioRef = useRef(); // Создаем ссылку на элемент аудио
+
+    const handlePlayPause = () => {
+        if (isPlaying) {
+        audioRef.current.pause(); // Ставим на паузу
+        } else {
+        audioRef.current.play(); // Воспроизводим
+        }
+        setIsPlaying(!isPlaying); // Меняем состояние
+    };
     return (
         <div>
+            
+            <div className={styles.fixed}></div>
             <Head>
                 <link rel="icon" type={'png/img'} href={'/logo_white.png'}/>
                 <title>Диас - Диляра</title>
             </Head>
             <div className={styles.body}>
                 <div className={styles.blur}>
+                {/* <button onClick={handlePlayPause} className={styles.playPauseButton}>
+                    {isPlaying ? 'Пауза' : 'Играть'}
+                </button> */}
+                <div className={styles.playBtn} onClick={handlePlayPause}>
+                    {/* <Image src={'/play.png'} onClick={handlePlayPause} height={32} width={32} className={styles.play}/> */}
+                    {
+                        isPlaying ? (
+                            <>
+                                <Image src={'/pause.png'}height={32} width={32} className={styles.play}/>
+                            </>
+                        ) : (
+                            <>
+                                <Image src={'/play.png'}  height={32} width={32} className={styles.play}/>
+                            </>
+                            
+                        )
+                    }
+                </div>
+                
                     <div className={styles.mainBlock}>
                         <div className={styles.whiteBlock}>
                             <h1 className={styles.dnd}>D<span className={styles.dndG}>&</span>D</h1>
                             <h1 className={styles.names}>Диас - Диляра</h1>
-                            <span className={styles.date}>—— 24.04.2024 ——</span>
+                            <span className={styles.date}>—— 29.06.2024 ——</span>
                         </div>
 
                         <Image src={'/List.png'} width={200} height={200} style={{transform: 'rotate(75deg)', marginTop: '-50px'}}/>
@@ -74,7 +108,7 @@ const Index = () => {
 
                         <div className={styles.header} style={{marginTop: '-30px'}}>
                             <span style={{display: 'block', textAlign: 'center'}}>БАСТАЛУЫ</span>
-                            <span style={{display: 'block', textAlign: 'center'}}>17:00</span>
+                            <span style={{display: 'block', textAlign: 'center'}}>16:00</span>
                         </div>
                     </div>
                     <div style={{display: 'flex', justifyContent: 'center', paddingBottom: 50}}>
@@ -148,7 +182,7 @@ const Index = () => {
 
                             <div className={styles.row}>
                                 <div className={styles.item}>
-                                    <span className={styles.time}>19:00</span> <br/>
+                                    <span className={styles.time}>20:00</span> <br/>
                                     <span style={{marginTop: '-10px'}}>Қалыңдық пен күйеужігіт вальсі</span>
                                 </div>
 
@@ -159,7 +193,7 @@ const Index = () => {
                                 <Image src={'/IMG_0909.png'} height={100} width={100}/>
 
                                 <div className={styles.item}>
-                                    <span className={styles.time}>20:00</span> <br/>
+                                    <span className={styles.time}>21:00</span> <br/>
                                     <span style={{marginTop: '-10px'}}>Музыкалық би, шоу бағдарлама</span>
                                 </div>
                             </div>
@@ -203,7 +237,7 @@ const Index = () => {
                         <Image src={'/List.png'} width={200} height={200} style={{transform: 'rotate(75deg)', marginTop: '-50px'}}/>
                     </div>
 
-                    <audio src="/Wedding Day.mp4" autoPlay loop />
+                    <audio src="/music.mp4" autoPlay loop ref={audioRef}/>
                 </div>
             </div>
 
