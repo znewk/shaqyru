@@ -217,7 +217,7 @@ const Index = () => {
                             <div className={styles.wrapperItem}>
                                 <Image src={'/1.png'} height={100} width={120}/>
                                 <span>
-                                Ерлер қауымы: Классикалық костюм     
+                                Әйелдер қауымы: Кешкі көйлек     
                                 </span>
                             </div>
                         </div>
