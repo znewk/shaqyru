@@ -1,21 +1,21 @@
 import Head from "next/head";
 import styles from './style.module.css'
 import Image from "next/image";
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const Index = () => {
-
-    const [isPlaying, setIsPlaying] = useState(true); // Состояние, отслеживающее, воспроизводится ли музыка
-    const audioRef = useRef(); // Создаем ссылку на элемент аудио
-
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audioRef = useRef(null);
+  
     const handlePlayPause = () => {
-        if (isPlaying) {
-        audioRef.current.pause(); // Ставим на паузу
-        } else {
-        audioRef.current.play(); // Воспроизводим
-        }
-        setIsPlaying(!isPlaying); // Меняем состояние
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
     };
+
     return (
         <div>
             
@@ -237,7 +237,7 @@ const Index = () => {
                         <Image src={'/List.png'} width={200} height={200} style={{transform: 'rotate(75deg)', marginTop: '-50px'}}/>
                     </div>
 
-                    <audio src="/music.mp4" autoPlay loop ref={audioRef}/>
+                    <audio src="/music.mp3" autoPlay loop ref={audioRef}/>
                 </div>
             </div>
 
