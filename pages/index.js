@@ -94,7 +94,7 @@ const Index = () => {
                             <span style={{display: 'block', textAlign: 'center'}}>———————————</span>
 
                             <div style={{display: 'flex', justifyContent: 'space-between', fontSize:24}}>
-                                <span>29 МАУЫСЫМ</span>
+                                <span>29 МАУСЫМ</span>
                                 <span>2024</span>
                             </div>
                             <span style={{display: 'block', textAlign: 'center'}}>———————————</span>
